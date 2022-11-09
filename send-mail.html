@@ -43,7 +43,7 @@
         <span class="divide"></span>
 
         <div class="form">
-            <form action="./send.php" method="post" class="form__content">
+            <form action="send.php" method="post" class="form__content">
                 <label class="label" for="">Name*</label>
                 <input class="input" type="text" name="name" placeholder="Enter Your Full Name" required>
 
@@ -51,9 +51,9 @@
                 <input class="input" type="email" name="email" placeholder="Enter Your Email" required>
 
                 <label class="label" for="">Message*</label>
-                <textarea class="input form__comment" rows="15" cols="50" required>
+                <textarea class="input form__comment" rows="15" cols="50" name="message" required>
                 </textarea>
-                <input class="form__btn" type="submit" value="Send">
+                <input class="form__btn" type="submit" value="Send" name="SubmitButton">
             </form>
         </div>
 
