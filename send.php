@@ -16,16 +16,9 @@ $name = trim($name);
 $email = trim($email);
 $message = trim($message);
 
-if (mail("qumagipupu@rungel.net",
-         "Новое письмо",
-         "Name: ".$name."\n".
-         "Message: ".$message,
-         "From: no-reply@gmail.com \r\n"))
-{
-    echo('OKEY');
-}
-else {
-    echo('ERROR');
-}
+$to = "qumagipupu@rungel.net";
+$subject = "Test";
+$headers = "From:" . $email;
 
+mail($to, $subject, $message, $headers);
 ?>
