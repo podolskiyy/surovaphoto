@@ -16,7 +16,7 @@
         <header class="header">
             <div class="header__content">
                 <a class="logo" href="#">
-                    <img class="logo__img" src="" alt="LOGO">
+                    <object class="logo__img" data="./media/SUROVA-02.svg" width="300" height="300"></object>
                 </a>
 
                 <nav class="nav">
@@ -38,7 +38,12 @@
                 <p class="title__small-title">PHOTOGRAPHS OF PEOPLE</p>
                 <h1 class="title__name">YULIA SUROVA</h1>
             </article>
-            <img class="hero__main-photo" src="./media/header-image copy.jpg" alt="">
+            <picture class="hero__main-photo">
+                <source media="(max-width:480px)" srcset="media/1080.jpg"/>
+                <source media="(max-width:992px)" srcset="media/1600.jpg"/>
+                <source media="(max-width:1920px)" srcset="media/1920.jpg"/>
+                <img class="hero__main-photo" src="./media/header-image copy.jpg" alt="">
+            </picture>
         </section>
 
         <main class="main">
