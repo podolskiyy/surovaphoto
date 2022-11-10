@@ -53,7 +53,7 @@
                 <label class="label" for="">Message*</label>
                 <textarea class="input form__comment" rows="15" cols="50" name="message" required>
                 </textarea>
-                <input class="form__btn" type="submit" value="Send" name="SubmitButton">
+                <input class="form__btn" type="submit" value="Send" name="send">
             </form>
         </div>
 
