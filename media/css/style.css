@@ -112,12 +112,18 @@
     cursor: pointer;
     z-index: 1;
   }
+
+
 }
 
 
 #menu__toggle:checked ~ .nav__links {
   visibility: visible;
   left: 0;
+}
+
+.nav__links:has(> .nav__link:focus) {
+  background-color: blue;
 }
 
 #menu__toggle:checked ~ .toggle-button > .bar {
@@ -368,12 +374,13 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all .3s ease-in-out;
   color: rgba(34, 34, 34, 100%);
 }
 
 .media__item:hover {
-  border-color: #e9acac;
-  color: #e9acac;
+  border-color: #a4602f;
+  color: #a4602f;
 }
 
 .contact-me__button {
@@ -386,13 +393,14 @@
   padding: 1.3rem 2.5rem;
   color: white;
   background-color: rgba(34, 34, 34, 100%);
+  transition: all .3s ease-in-out;
   font-size: 1rem;
+  border: 1.5px solid #222222;
 }
 
 .button:hover {
   background-color: white;
   color: black;
-  border: 1.5px solid #222222;
 }
 
 .contact-me__text {
